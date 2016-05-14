@@ -1,0 +1,3 @@
+require 'haystack'
+
+Haystack.run!
