@@ -1,0 +1,34 @@
+@font-face{ 
+    font-family: 'Gidole';
+    src: url(" font/Gidolinya-Regular.otf") format("opentype");
+    src: url("font/Gidole-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: 'Gidole';
+    background: #292f36;
+    color:#f7fff7;
+}
+
+a:link, a:visited {
+    color: #4ecdc4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    margin: 0 auto;
+    width: 70%;
+}
+.dir_list {
+    width: 100%;
+}
+.dir_list th {
+    text-align: left;
+}
+.dir_list .icon-share {
+    color: #ffe66d;
+}

@@ -1,0 +1,26 @@
+<table class='dir_list'>
+    <tr>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Size</th>
+        <th width="23px">Share</th>
+    </tr>
+<% unless @web_path.empty? %>
+    <tr>
+        <td colspan="4"><i class="icon-folder"></i> <a href="../">../</a></td>
+    </tr>
+<% end %>
+<% for entry in @dir_list %>
+    <tr>
+    <% if entry.directory? %>
+        <td><i class="icon-folder"></i> <a href="<%=entry.name%>/"><%=entry.name%></a></td>
+        <td colspan="2"><%=entry.mtime%></td>
+    <% else %>
+        <td><i class="icon-doc-text-inv"></i> <a href="<%=entry.name%>"><%=entry.name%></a></td>
+        <td><%=entry.mtime%></td>
+        <td><%=entry.size%></td>
+    <% end %>
+        <td><a class="icon-share" href="#share"></a></td>
+    </tr>
+<% end %>
+</table>
