@@ -3,6 +3,7 @@ require 'erubis'
 require 'filesize'
 
 $LOAD_PATH << 'lib'
+require 'config'
 require 'stack'
 require 'user'
 require 'session_store'
