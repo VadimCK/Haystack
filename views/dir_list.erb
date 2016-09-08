@@ -13,10 +13,10 @@
 <% for entry in @dir_list %>
     <tr>
     <% if entry.directory? %>
-        <td><i class="icon-folder"></i> <a href="<%=entry.name%>/"><%=entry.name%></a></td>
+        <td><i class="icon-folder"></i> <a href="<%=u(entry.name)%>/"><%=entry.name%></a></td>
         <td colspan="2"><%=entry.mtime%></td>
     <% else %>
-        <td><i class="icon-doc-text-inv"></i> <a href="<%=entry.name%>"><%=entry.name%></a></td>
+        <td><i class="icon-doc-text-inv"></i> <a href="<%=u(entry.name)%>"><%=entry.name%></a></td>
         <td><%=entry.mtime%></td>
         <td><%=entry.size%></td>
     <% end %>
