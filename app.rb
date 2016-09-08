@@ -9,6 +9,8 @@ require 'user'
 require 'session_store'
 
 class HayStack < Sinatra::Base
+    include ERB::Util
+
     use Rack::Sendfile
     set :static, true
     set :erb, :escape_html => true
