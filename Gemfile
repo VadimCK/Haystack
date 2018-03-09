@@ -2,7 +2,7 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem "sinatra", "2.0.0"
+gem "sinatra", "2.0.1"
 gem "thin"
 gem "erubis"
 gem "filesize"
