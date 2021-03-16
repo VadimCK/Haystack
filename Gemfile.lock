@@ -8,7 +8,7 @@ GEM
     filesize (0.1.1)
     mustermann (1.0.2)
     net-ldap (0.16.1)
-    rack (2.0.4)
+    rack (~> 2.0.6)
     rack-protection (2.0.0)
       rack
     sinatra (2.0.1)
