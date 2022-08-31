@@ -15,6 +15,9 @@ class HayStack < Sinatra::Base
     set :static, true
     set :erb, :escape_html => true
 
+    # Force production mode
+    set :environment, :production
+
     session_store = SessionStore.new
 
     use Rack::Auth::Basic, "Restricted Area" do |username, password|

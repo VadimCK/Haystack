@@ -2,9 +2,11 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem "sinatra", "2.0.1"
-gem "thin"
-gem "erubis"
-gem "filesize"
-gem "net-ldap"
-gem "daybreak"
+gem "sinatra", "~> 2"
+gem "thin", "~> 1.7"
+gem "erubis", "~> 2.7"
+gem "filesize", "~> 0"
+gem "net-ldap", "~> 0"
+
+gem "daybreak", "~> 0"
+
