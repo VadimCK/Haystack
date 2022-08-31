@@ -1,5 +1,6 @@
 require 'config'
 require 'needle'
+require 'uri'
 
 class Stack
 
