@@ -1,3 +1,3 @@
 #!/bin/bash
-export RUBY_ENV="production"
+export RACK_ENV="production"
 bundle exec puma -b tcp://127.0.0.1:3000
