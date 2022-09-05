@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 gem "sinatra", "~> 2"
-gem "thin", "~> 1.7"
+gem "puma", "~> 5"
 gem "erubis", "~> 2.7"
 gem "filesize", "~> 0"
 gem "net-ldap", "~> 0"

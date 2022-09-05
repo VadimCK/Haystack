@@ -15,18 +15,16 @@ class HayStack < Sinatra::Base
     set :static, true
     set :erb, :escape_html => true
 
-    # Force production mode
-    set :environment, :production
-
     session_store = SessionStore.new
 
+    # Enable Basic Auth if LDAP mode is set
     use Rack::Auth::Basic, "Restricted Area" do |username, password|
         return false if username.empty? or password.empty?
 
         user = User.new username
         user.use_store session_store
         user.authorized? password
-    end
+    end if Config::AUTH_MODE == :ldap
 
     get '/*' do |path|
         @title = "Index of /#{path}"
